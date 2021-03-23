@@ -1,4 +1,5 @@
 <div class='items-container'>
+  <h1>Items!</h1>
   <% @items.each.with_index do |item, index| %>
     <div class="items items-<%= index %>">
       <h3><%= link_to  item.title, item_path(item) %></h3>
